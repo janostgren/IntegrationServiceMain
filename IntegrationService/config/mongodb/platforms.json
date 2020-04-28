@@ -1,0 +1,70 @@
+    [
+        {
+            "_id": "AppDynamics",
+            "name": "AppDynamics APM platform",
+            "apmPlatform": true,
+            "metricsSupport": true,
+            "authentication": "basic",
+            "httpHeaders": [
+                {
+                    "name": "ApicaCheckId",
+                    "value": "%CHECK_GUID%"
+                },
+                {
+                    "name": "ApicaRunId",
+                    "value": "%GUID(12)%"
+                },
+                {
+                    "name": "ApicaScenario",
+                    "value": "%CHECK_NAME%"
+                },
+                {
+                    "name": "AppDynamicsSnapshotEnabled",
+                    "value": "true"
+                }
+            ],
+            "traceMetaData": {
+                "requestId": "requestGUID",
+                "callTreeName": "Snapshot",
+                "entityName": "Business Transaction"
+            },
+            "securityScheme": {
+                "name":"BasicAuth",
+                "type": "http",
+                "scheme":"basic"
+            }
+        },
+        {
+            "_id": "Instana",
+            "name": "Instana APM platform",
+            "apmPlatform": true,
+            "metricsSupport": false,
+            "authentication": "bearer",
+            "httpHeaders": [
+                {
+                    "name": "ApicaCheckId",
+                    "value": "%CHECK_GUID%"
+                },
+                {
+                    "name": "ApicaRunId",
+                    "value": "%GUID(12)%"
+                },
+                {
+                    "name": "ApicaScenario",
+                    "value": "%CHECK_NAME%"
+                }
+            ],
+            "traceMetaData": {
+                "requestId": "id",
+                "callTreeName": "Trace",
+                "entityName": "Service"
+            },
+            "securityScheme": {
+                "name":"API Key",
+                "type": "http",
+                "scheme":"httpHeader Authorization",
+                "template":"apitoken=%apiKey%"
+                
+            }
+        }
+    ]

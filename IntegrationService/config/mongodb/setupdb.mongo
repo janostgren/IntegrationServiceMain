@@ -1,0 +1,2 @@
+use integration-test
+db.integrationprofiles.createIndex ({"customerId":1, "userId":2, "name":3}, {unique: true })

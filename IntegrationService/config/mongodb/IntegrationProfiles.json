@@ -1,0 +1,48 @@
+    [
+        {
+            "customerId": "3e638a45-908b-4193-a23a-f5e07ba67dd7",
+            "userId": "fff10f3a-73b5-42ed-b684-283f1a5ade8c",
+            "readOnly": false,
+            "shared": true,
+            "platformId": "AppDynamics",
+            "name": "AppD-Ticketmonster",
+            "url": "https://apica-nfr.saas.appdynamics.com",
+            "account": "apica-nfr",
+            "application": "Ticketmonster",
+            "applicationId": "2685",
+            "authentication": {
+                "properties": [
+                    {
+                        "key": "user",
+                        "value": "ticketmonster"
+                    },
+                    {
+                        "key": "password",
+                        "value": "8BOAK37P"
+                    }
+                ]
+            },
+            "description": "The Apica demo application Ticketmonster"
+        },
+        {
+            "customerId": "3e638a45-908b-4193-a23a-f5e07ba67dd7",
+            "userId": "fff10f3a-73b5-42ed-b684-283f1a5ade8c",
+            "readOnly": false,
+            "shared": true,
+            "platformId": "Instana",
+            "name": "Instana-Robotshop",
+            "url": "https://apica-apica.instana.io",
+            "account": "apica-apica",
+            "application": "Robotshop",
+            "applicationId": "ZG2n5bmFSTGTQAV1leCYtA",
+            "authentication": {
+                "properties": [
+                    {
+                        "key": "apiKey",
+                        "value": "EskeACW4Qmm3rmSM"
+                    }
+                ]
+            },
+            "description": "The Instana demo application robotshop installed in Apica demo env"
+        }
+    ]
